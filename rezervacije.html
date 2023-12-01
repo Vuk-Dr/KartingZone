@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-RS">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Karting Zone Srbija</title>
+		<link href="img/h-logo.png" rel="shortcut icon" type="image/png"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,200;0,400;0,600;1,400;1,600&family=Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		
+	</head>
+	<body>
+		<header>
+			<div class="wrap">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo-white.png" alt="Logo"/></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Početna</a></li>
+						<li><a href="cene-termini.html">Cene i termini</a></li>
+						<li><a href="pravila-staze.html">Pravila staze</a></li>
+						<li id="active"><a href="rezervacije.html">Rezervacije</a></li>
+						<li><a href="galerija.html">Galerija</a></li>
+						<li><a href="autor.html">O autoru</a></li>
+					</ul>
+				</nav>
+				<div class="cleaner"></div>
+			</div>
+		</header>
+		<div id="main">
+			<h1 id="title-rezervacije">REZERVIŠITE VAŠU KARTING AVANTURU ONLINE</h1>
+			<div class="wrap rezervacije">
+				<div id="location-rezervacije">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3588588815956!2d20.48183987678714!3d44.81425337107085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwIElDVCDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1701469664012!5m2!1ssr!2srs" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<form action="obrada.php" method="get">
+					<div id="form-rezervacije">
+						<div class="form-item">
+							<label for="name">Ime:</label><br/>
+							<input type="text" id="name" name="name" placeholder="Pera"/>
+						</div>
+						<div class="form-item">
+							<label for="surname">Prezime:</label><br/>
+							<input type="text" id="surname" name="surname" placeholder="Perić"/>
+						</div>
+						<div class="form-item">
+							<label for="mail">Mail:</label><br/>
+							<input type="email" id="mail" name="mail" placeholder="pera.peric@gmail.com"/>
+						</div>
+						<div class="form-item">
+							<label for="phone">Telefon:</label><br/>
+							<input type="tel" id="phone" name="phone" placeholder="064 3131591"/>
+						</div>
+						<div class="form-item">
+							<label for="date">Datum:</label><br/>
+							<input type="date" id="date" name="date"/>
+						</div>
+						<div class="form-item">
+							<label for="time">Vreme:</label><br/>
+							<input type="time" id="time" name="time"/>
+						</div>
+						<div id="check-form">
+							<p>Izaberite karting:</p>
+							<div class="form-item">
+								<input type="checkbox" id="karting-check" name="karting-check"/>
+								<label for="karting-check">Senior</label>
+							</div>
+							<div class="form-item">
+								<input type="checkbox" id="karting-check" name="karting-check"/>
+								<label for="karting-check">Junior</label>
+							</div>
+						</div>
+						<div class="form-item hidden"><input/></div>
+						<div class="form-item">
+							<label for="note">Napomena</label><br/>
+							<textarea id="note" placeholder="..."></textarea>
+						</div>
+						<div class="form-item term">
+							<input type="radio" id="term" name="term"/>
+							<label for="term">Saglasan sam sa uslovima korišćenja</label><br/>
+						</div>
+						<div class="form-item hidden"><input/></div>
+						<div class="form-item">
+							<input type="submit" id="submit" name="submit"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<footer>
+			<div class="wrap">
+				<div class="footer-block">
+					<a href="index.html"><img src="img/logo-white.png" alt="Footer logo"/></a>
+					<hr/>
+					<ul>
+						<li><a href="#"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp; Svetog Save 84c, Beograd</li></a>
+						<li><a href="#"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp; 011 31 31 591</li></a>
+						<li><a href="mailto: vuk.drobnjakovic.12.23@ict.edu.rs"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp; vuk&#46;drobnjakovic&#46;12&#46;23&#64;ict&#46;edu&#46;rs</a></li>
+					</ul>
+				</div>
+				<div class="footer-block">
+					<h3>Newsletter</h3>
+					<hr/>
+					<form action="obrada.php" method="post">
+						<label for="newsletter">Saznajte prvi za popuste i akcije!</label>
+						<input type="email" id="newsletter" name="newsletter" placeholder="Unesite svoj e-mail"/>
+						<a href="#"><i class="fa-solid fa-paper-plane"></i></a>
+					</form>
+					<a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+					<p>Karting Zone 2023 | Sva prava zadržana</p>
+				</div>
+				<div class="footer-block">
+					<h3>Korisni linkovi</h3>
+					<hr/>
+					<ul>
+						<li><a href="index.html">Rezervacije</a></li>
+						<li><a href="index.html">Cene i termini</a></li>
+						<li><a href="index.html">Pravila staze</a></li>
+						<li><a href="galerija.html">Galerija</a></li>
+						<li><a href="index.html">O autoru</a></li>
+						<li><a href="rss.xml" target="_blank">RSS <i class="fa-solid fa-square-rss"></i></a></li>
+						<li><a href="sitemap.xml" target="_blank">Sitemap<i class="fa-solid fa-sitemap"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
