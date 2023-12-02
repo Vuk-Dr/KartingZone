@@ -2,8 +2,6 @@
 <html lang="sr-Latn-RS">
 	<head>
 		<meta charset="UTF-8"/>
-		<meta name="keywords" content="karting, karting beograd, go kart, karting trkanje, karting srbija">
-		<meta name="description" content="Dobrodošli na najbržu karting stazu u Srbiji | Karting Zone Beograd">
 		<title>Karting Zone Srbija</title>
 		<link href="img/h-logo.png" rel="shortcut icon" type="image/png"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +20,6 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Početna</a></li>
-						<li><a href="cene-termini.html">Cene i termini</a></li>
 						<li><a href="pravila-staze.html">Pravila staze</a></li>
 						<li id="active"><a href="rezervacije.html">Rezervacije</a></li>
 						<li><a href="galerija.html">Galerija</a></li>
@@ -33,7 +30,9 @@
 			</div>
 		</header>
 		<div id="main">
-			<h1 id="title-rezervacije">REZERVIŠITE VAŠU KARTING AVANTURU ONLINE</h1>
+			<div id="title-rezervacije">REZERVIŠITE VAŠU KARTING AVANTURU ONLINE
+				<hr/>
+			</div>
 			<div class="wrap rezervacije">
 				<div id="location-rezervacije">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3588588815956!2d20.48183987678714!3d44.81425337107085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwIElDVCDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1701469664012!5m2!1ssr!2srs" width="500" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -42,7 +41,7 @@
 					<div id="form-rezervacije">
 						<div class="form-item">
 							<label for="name">Ime:</label><br/>
-							<input type="text" id="name" name="name" placeholder="Pera"/>
+							<input type="text" id="name" name="name" placeholder="Pera" autocomplete="on" />
 						</div>
 						<div class="form-item">
 							<label for="surname">Prezime:</label><br/>
@@ -54,7 +53,7 @@
 						</div>
 						<div class="form-item">
 							<label for="phone">Telefon:</label><br/>
-							<input type="tel" id="phone" name="phone" placeholder="064 3131591"/>
+							<input type="tel" id="phone" name="phone" placeholder="064 3131591" autocomplete="on"/>
 						</div>
 						<div class="form-item">
 							<label for="date">Datum:</label><br/>
@@ -67,12 +66,12 @@
 						<div id="check-form">
 							<p>Izaberite karting:</p>
 							<div class="form-item">
-								<input type="checkbox" id="karting-check" name="karting-check"/>
-								<label for="karting-check">Senior</label>
+								<input type="checkbox" id="senior-check" name="karting-check"/>
+								<label for="senior-check">Senior</label>
 							</div>
 							<div class="form-item">
-								<input type="checkbox" id="karting-check" name="karting-check"/>
-								<label for="karting-check">Junior</label>
+								<input type="checkbox" id="junior-check" name="karting-check"/>
+								<label for="junior-check">Junior</label>
 							</div>
 						</div>
 						<div class="form-item hidden"><input/></div>
@@ -82,7 +81,7 @@
 						</div>
 						<div class="form-item term">
 							<input type="radio" id="term" name="term"/>
-							<label for="term">Saglasan sam sa uslovima korišćenja</label><br/>
+							<label for="term">Saglasan sam sa <a href="pravila-staze">uslovima korišćenja</a></label><br/>
 						</div>
 						<div class="form-item hidden"><input/></div>
 						<div class="form-item">
