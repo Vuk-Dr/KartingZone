@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+	<channel>
+		<item>
+			<title>Vikend Akcija</title>
+			<link>https://vuk-dr.github.io/KartingZone/rezervacije.html</link>
+			<description>Tokom vikenda ostvarite popust od 20% ako povede drugara sa sobom. Čekamo te</description>
+		</item>
+		<item>
+			<title>Novi kartinzi</title>
+			<link>https://vuk-dr.github.io/KartingZone/cene-termini.html</link>
+			<description>U garažu nam je novih 10 SODI GT4 kartinga. Pridruži nam se na stazi </description>
+		</item>
+		<item>
+			<title>Online rezervacija</title>
+			<link>https://vuk-dr.github.io/KartingZone/rezervacije.html</link>
+			<description>Od danas je omogućena online rezervacija termina za karting</description>
+		</item>
+	</channel>
+</rss>
