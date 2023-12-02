@@ -276,19 +276,22 @@ hr{
 #main-text-staza .main-button p:hover{
 	color: red;
 }
-#main-title .main-button{
-	bottom: 350px;
-	left: 1200px;
+.cover-black .main-button{
+	bottom: 180px;
+	left: 1100px;
 	width: 240px;
 	height: 80px;
 	border: 2px solid red;
 	background-color: rgba(0,0,0,0.5);
 }
-#main-title .main-button p{
+.cover-black .main-button p{
+	text-align: center;
 	position: relative;
 	top: 35px;
+	font-family: 'Asap', sans-serif;
+	font-size: 25px;
 }
-#main-title .main-button:hover{
+.cover-black .main-button:hover{
 	background-color: red;
 }
 #main-karts{
@@ -334,6 +337,7 @@ hr{
 	box-shadow: none;
 }
 .kart-text{
+	margin: 0px 40px;
 	width: 400px;
 	position: relative;
 }
