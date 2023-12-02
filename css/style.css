@@ -282,10 +282,14 @@ hr{
 	width: 240px;
 	height: 80px;
 	border: 2px solid red;
+	background-color: rgba(0,0,0,0.5);
 }
 #main-title .main-button p{
 	position: relative;
 	top: 35px;
+}
+#main-title .main-button:hover{
+	background-color: red;
 }
 #main-karts{
 	width: 100%;
